@@ -18,3 +18,11 @@ pip install opencv-python numpy
 2. The webcam feed will open, and the script will continuously monitor for motion.
 3. When motion is detected, the script saves a short video clip (video1.avi) containing the frames with detected motion.
 4. Press 'q' to exit the script.
+## Code Over-view:
+1. detect_motion(frame, prev_frame): Function to detect motion by computing the absolute difference between consecutive frames and applying a threshold.
+2. main(): Main function to capture frames from the webcam, detect motion, and save frames when motion is significant.
+## Adjusting Motion Sensitivity:
+- The script uses a contour area threshold (area > 1000) to determine significant motion. You can adjust this threshold based on your specific requirements.
+## File Structure:
+1. thief_detector.py: The main Python script.
+2. video1.avi: The output video file containing frames with detected motion.
